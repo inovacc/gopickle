@@ -1,4 +1,4 @@
-package picklego
+package gopickle
 
 import (
 	"encoding/gob"

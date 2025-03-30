@@ -1,17 +1,17 @@
-# picklego [![Test](https://github.com/inovacc/picklego/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/inovacc/picklego/actions/workflows/test.yml)
+# gopickle [![Test](https://github.com/inovacc/gopickle/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/inovacc/gopickle/actions/workflows/test.yml)
 
-`picklego` is a Go package that provides functionality similar to Python's `pickle` module. It allows you to serialize and deserialize Go data structures to and from files using the `gob` encoding.
+`gopickle` is a Go package that provides functionality similar to Python's `pickle` module. It allows you to serialize and deserialize Go data structures to and from files using the `gob` encoding.
 
 ## Installation
 
 To install the package, use the following command:
 
 ```sh
-go get github.com/inovacc/picklego/v1
+go get github.com/inovacc/gopickle/v1
 ```
 
 ## Usage
-Here is an example of how to use the picklego package:
+Here is an example of how to use the gopickle package:
 
 ```go
 package main
@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 	"log"
-	"github.com/inovacc/picklego/v1"
+	"github.com/inovacc/gopickle/v1"
 )
 
 func main() {
@@ -32,7 +32,7 @@ func main() {
 	}
 
 	// Serialize data to a file
-	if err := picklego.Dump("data.pgo", data); err != nil {
+	if err := gopickle.Dump("data.pgo", data); err != nil {
 		log.Fatalf("Failed to dump data: %v", err)
 	}
 
@@ -42,7 +42,7 @@ func main() {
 	}
 
 	// Deserialize data from a file
-	if err := picklego.Load("data.pgo", &loadedData); err != nil {
+	if err := gopickle.Load("data.pgo", &loadedData); err != nil {
 		log.Fatalf("Failed to load data: %v", err)
 	}
 
