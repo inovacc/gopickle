@@ -7,7 +7,7 @@
 To install the package, use the following command:
 
 ```sh
-go get github.com/inovacc/gopickle/v1
+go get github.com/inovacc/gopickle/
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 	"log"
-	"github.com/inovacc/gopickle/v1"
+	"github.com/inovacc/gopickle"
 )
 
 func main() {
