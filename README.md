@@ -1,4 +1,4 @@
-# picklego
+# picklego [![Test](https://github.com/inovacc/picklego/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/inovacc/picklego/actions/workflows/test.yml)
 
 `picklego` is a Go package that provides functionality similar to Python's `pickle` module. It allows you to serialize and deserialize Go data structures to and from files using the `gob` encoding.
 
@@ -7,7 +7,7 @@
 To install the package, use the following command:
 
 ```sh
-go get github.com/inovacc/picklego
+go get github.com/inovacc/picklego/v1
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 	"log"
-	"github.com/inovacc/picklego"
+	"github.com/inovacc/picklego/v1"
 )
 
 func main() {
